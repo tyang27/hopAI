@@ -5,7 +5,7 @@ import { Panel, Navbar, Nav, MenuItem, PageHeader } from 'react-bootstrap';
 class Discuss extends Component {
   render() {
     return (
-      <div className="Discuss" style={{ height: '4000px', marginLeft: '25px', marginRight: '25px' }}>
+      <div className="Discuss" style={{ height: '4000px', marginLeft: '50px', marginRight: '50px' }}>
 
         <PageHeader>Discuss <small>AI</small></PageHeader>
 

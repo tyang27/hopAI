@@ -5,7 +5,7 @@ import { Panel, Navbar, Nav, MenuItem, PageHeader } from 'react-bootstrap';
 class Create extends Component {
   render() {
     return (
-      <div className="Create" style={{ height: '4000px', marginLeft: '25px', marginRight: '25px' }}>
+      <div className="Create" style={{ height: '4000px', marginLeft: '50px', marginRight: '50px' }}>
 
         <PageHeader>Create <small>AI</small></PageHeader>
 
