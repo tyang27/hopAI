@@ -1,20 +1,22 @@
 import React, { Component } from 'react';
 import "./Explore.css";
-import { Panel } from 'react-bootstrap';
+import { Panel, Navbar, Nav, MenuItem, PageHeader } from 'react-bootstrap';
 
 class Explore extends Component {
   render() {
     return (
       <div className="Explore" style={{ height: '4000px', marginLeft: '25px', marginRight: '25px' }}>
 
-        <Panel>
-          <Panel.Body>
-            <a href="#Spotlight">Spotlight </a>
-            <a href='#Events'>Events </a>
-            <a href='#Workshops'>Workshops </a>
-            <a href='#Gallery'>Gallery </a>
-          </Panel.Body>
-        </Panel>
+        <PageHeader>Explore <small>AI</small></PageHeader>
+
+        <Navbar className="Navbar" fluid>
+          <Nav bsStyle="pills">
+            <MenuItem href="#Spotlight">Spotlight</MenuItem>
+            <MenuItem href="#Events">Events</MenuItem>
+            <MenuItem href="#Workshops">Workshops</MenuItem>
+            <MenuItem href="#Gallery">Gallery</MenuItem>
+          </Nav>
+        </Navbar>
 
         <div id='Spotlight'>
           <Panel style={{ height: '300px' }}>
