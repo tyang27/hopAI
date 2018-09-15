@@ -6,7 +6,7 @@ import Events from './Events.js';
 class Explore extends Component {
   render() {
     return (
-      <div className="Explore" style={{ height: '4000px', marginLeft: '25px', marginRight: '25px' }}>
+      <div className="Explore" style={{ height: '4000px', marginLeft: '50px', marginRight: '50px' }}>
 
         <PageHeader>Explore <small>AI</small></PageHeader>
 
