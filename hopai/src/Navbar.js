@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Navbar, Nav, NavItem} from 'react-bootstrap';
+import {Navbar, Nav, MenuItem, NavDropdown} from 'react-bootstrap';
 import {Route, Switch, BrowserRouter as Router } from 'react-router-dom';
 import NotFound from './NotFound.js';
 import About from './home/About.js'
@@ -20,10 +20,21 @@ class NavBar extends Component {
                 </Navbar.Brand>
               </Navbar.Header>
               <Nav>
-                <NavItem eventKey={1} href="/discuss">Discuss</NavItem>
-                <NavItem eventKey={2} href="/explore">Explore</NavItem>
-                <NavItem eventKey={3} href="/imagine">Imagine</NavItem>
-                <NavItem eventKey={4} href="/connect">Connect</NavItem>
+                <NavDropdown eventkey={1} title="EXPLORE">
+                  <MenuItem eventKey={1.1}>Spotlight</MenuItem>
+                  <MenuItem eventKey={1.2}>Events</MenuItem>
+                  <MenuItem eventKey={1.3}>Workshops</MenuItem>
+                  <MenuItem eventKey={1.4}>Gallery</MenuItem>
+                </NavDropdown>
+                <NavDropdown eventkey={2} title="DISCUSS">
+                  <MenuItem eventKey={2.1} href="/discuss">Blog</MenuItem>
+                  <MenuItem eventKey={2.2}>Contribute</MenuItem>
+                </NavDropdown>
+                <NavDropdown eventkey={3} title="COLLABORATE">
+                  <MenuItem eventKey={3.1}>Ideas</MenuItem>
+                  <MenuItem eventKey={3.2}>Projects</MenuItem>
+                  <MenuItem eventKey={3.3}>Community</MenuItem>
+                </NavDropdown>
               </Nav>
             </Navbar>
 
