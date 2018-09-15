@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import "./Explore.css";
 import { Panel, Navbar, Nav, MenuItem, PageHeader } from 'react-bootstrap';
 import Events from './Events.js';
+import Gallery from './Gallery.js';
 
 class Explore extends Component {
   render() {
@@ -47,11 +48,7 @@ class Explore extends Component {
             <Panel.Title>Gallery</Panel.Title>
           </Panel.Heading>
           <Panel.Body>
-            <div>
-              <p>
-                content...  
-              </p>
-            </div>
+            <Gallery />
           </Panel.Body>
         </Panel>
       </div>
