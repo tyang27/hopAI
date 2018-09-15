@@ -8,12 +8,7 @@ class About extends Component {
   render() {
     return(
       <div className="About">
-        <Row>
-          <Mission />
-        </Row>
-        <Row>
-          <AboutPage />
-        </Row>
+        <Mission />
       </div>
     );
   }
