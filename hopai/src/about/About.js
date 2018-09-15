@@ -1,17 +1,16 @@
 import React, { Component } from 'react';
-import People from './People.js';
-import { Panel, PageHeader } from 'react-bootstrap';
+import { Panel } from 'react-bootstrap';
 
 class About extends Component {
   render() {
     return(
       <div className="About" style={{ height: '4000px', marginLeft: '50px', marginRight: '50px' }}>
 
-        <PageHeader>About <small>HopAI</small></PageHeader>
+        {/* <PageHeader>About <small>HopAI</small></PageHeader> */}
 
         <Panel>
           <Panel.Heading>
-            <Panel.Title>Motivation</Panel.Title>
+            <Panel.Title>Our Motivation</Panel.Title>
           </Panel.Heading>
           <Panel.Body>
             <p>
@@ -25,7 +24,7 @@ class About extends Component {
 
         <Panel>
           <Panel.Heading>
-            <Panel.Title>Mission</Panel.Title>
+            <Panel.Title>Our Mission</Panel.Title>
           </Panel.Heading>
           <Panel.Body>
             <p>
@@ -36,10 +35,43 @@ class About extends Component {
 
         <Panel>
           <Panel.Heading>
-            <Panel.Title>Team</Panel.Title>
+            <Panel.Title>Committee</Panel.Title>
           </Panel.Heading>
           <Panel.Body>
-            <People />
+            <Panel style={{ paddingBottom: '10px' }}>
+              <h4>Jiali Zhang</h4>
+              <div>
+                <img style={{ width: '300px' }} src={require('./jiali.jpeg')} />
+              </div>
+              <div style={{ padding: '5px' }}>
+                <i>Undergrad at hopkins</i>
+              </div>
+              <div>
+                <p>Jiali studies stuff and likes bio things and ai</p>
+              </div>
+            </Panel>
+
+            <Panel style={{ paddingBottom: '5px' }}>
+              <h4>Will David</h4>
+              <div>
+                <img style={{ width: '300px' }} src={require('./jiali.jpeg')} />
+              </div>
+              <div style={{ padding: '5px' }}>
+                <i>Undergrad at hopkins</i>
+              </div>
+              <div>
+                <p>Jiali studies stuff and likes bio things and ai</p>
+              </div>
+            </Panel>
+          </Panel.Body>
+        </Panel>
+
+        <Panel>
+          <Panel.Heading>
+            <Panel.Title>Board of Advisors</Panel.Title>
+          </Panel.Heading>
+          <Panel.Body>
+            
           </Panel.Body>
         </Panel>
       </div>

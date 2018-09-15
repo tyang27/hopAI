@@ -9,7 +9,7 @@ class Explore extends Component {
     return (
       <div className="Explore" style={{ height: '4000px', marginLeft: '50px', marginRight: '50px' }}>
 
-        <PageHeader>Explore <small>AI</small></PageHeader>
+        {/* <PageHeader>Explore <small>AI</small></PageHeader> */}
 
         <Navbar className="Navbar" fluid>
           <Nav bsStyle="pills">

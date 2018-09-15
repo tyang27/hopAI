@@ -6,7 +6,7 @@ class Contact extends Component {
     return(
       <div className="Contact" style={{ height: '4000px', marginLeft: '50px', marginRight: '50px' }}>
 
-        <PageHeader>Contact <small>HopAI</small></PageHeader>
+        {/* <PageHeader>Contact <small>HopAI</small></PageHeader> */}
 
         <Panel>
           <Panel.Heading>

@@ -12,6 +12,7 @@ class Mission extends Component {
           </Panel.Heading>
           <Panel.Body>
             <p>Bringing together tomorrow's leaders to promote innovative, safe, and responsible AI.</p>
+            <a href='/about'><i>Learn More</i></a>
           </Panel.Body>
         </Panel>
       </div>
