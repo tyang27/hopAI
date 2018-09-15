@@ -1,15 +1,21 @@
 import React, { Component } from 'react';
-import {Col} from 'react-bootstrap';
+import { Panel, Col } from 'react-bootstrap';
 import "./Mission.css";
 
 class Mission extends Component {
   render() {
     return (
-        <div className="Mission">
-          <h1>OUR MISSION</h1>
-          <h2>Bringing together tomorrow's leaders to promote innovative, safe, and responsible AI.</h2>
-        </div>
-        );
+      <div className="Mission">
+        <Panel>
+          <Panel.Heading>
+            <Panel.Title>Our Mission</Panel.Title>
+          </Panel.Heading>
+          <Panel.Body>
+            <p>Bringing together tomorrow's leaders to promote innovative, safe, and responsible AI.</p>
+          </Panel.Body>
+        </Panel>
+      </div>
+    );
   }
 }
 

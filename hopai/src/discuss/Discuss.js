@@ -11,15 +11,15 @@ class Discuss extends Component {
 
         <Navbar className="Navbar" fluid>
           <Nav bsStyle="pills">
-            <MenuItem href="#Ideas">Blog</MenuItem>
-            <MenuItem href="#Projects">Contribute</MenuItem>
+            <MenuItem href="#Blog">Blog</MenuItem>
+            <MenuItem href="#Contribute">Contribute</MenuItem>
           </Nav>
         </Navbar>
 
-        <div id='Ideas'>
+        <div id='Blog'>
           <Panel style={{ height: '300px' }}>
             <Panel.Heading>
-              <Panel.Title>Ideas</Panel.Title>
+              <Panel.Title>Blog</Panel.Title>
             </Panel.Heading>
             <Panel.Body>
               <div>
@@ -29,10 +29,10 @@ class Discuss extends Component {
           </Panel>
         </div>
 
-        <div id='Projects'>
+        <div id='Contribute'>
           <Panel style={{ height: '300px' }}>
             <Panel.Heading>
-              <Panel.Title>Projects</Panel.Title>
+              <Panel.Title>Contribute</Panel.Title>
             </Panel.Heading>
             <Panel.Body>
               <div>
@@ -41,17 +41,6 @@ class Discuss extends Component {
             </Panel.Body>
           </Panel>
         </div>
-
-        <Panel id='Community' style={{ height: '300px' }}>
-          <Panel.Heading>
-            <Panel.Title>Community</Panel.Title>
-          </Panel.Heading>
-          <Panel.Body>
-            <div>
-              <p>content...</p>
-            </div>
-          </Panel.Body>
-        </Panel>
       </div>
     );
   }
