@@ -1,9 +1,16 @@
 import React, { Component } from 'react';
 import "./Create.css";
 import { Panel, Navbar, Nav, MenuItem, PageHeader } from 'react-bootstrap';
+import Idea from './Idea.js';
 
 class Create extends Component {
+
   render() {
+
+    const questions = [
+      'Words1',
+      'Words2'
+    ];
     return (
       <div className="Create" style={{ height: '4000px', marginLeft: '50px', marginRight: '50px' }}>
 
@@ -18,13 +25,15 @@ class Create extends Component {
         </Navbar>
 
         <div id='Ideas'>
-          <Panel style={{ height: '300px' }}>
+          <Panel>
             <Panel.Heading>
               <Panel.Title>Ideas</Panel.Title>
             </Panel.Heading>
             <Panel.Body>
               <div>
-                <p>content...</p>
+                <Idea problem="PROBLEM" background="BACKGROUND" questions={questions.map(function(q) {return <p>q</p>;})} />
+                <hr xs="5" />
+                <Idea />
               </div>
             </Panel.Body>
           </Panel>
