@@ -16,22 +16,13 @@ class Person extends Component {
 class People extends Component {
   render() {
     return(
-        <Col xs={16} md={8} className="People">
-          <h1>People</h1>
-          <h2>Board</h2>
-          <Row className="BoardRow">
-            <Col xs={8} md={3} className="member">
+        <div className="People">
+          <Row>
               <Person name="Member1" image="./jiali.jpeg"/>
-            </Col>
-            <Col xs={8} md={3} className="member">
-              <Person name="Member2" image= "/"/>
-            </Col>
-            <Col xs={8} md={3} className="member">
-              <Person name="Member3" image= "/"/>
-            </Col>
+              <Person name="Member2" image="./jiali.jpeg"/>
           </Row>
           <h2>Faculty partners</h2>
-        </Col>
+        </div>
     );
   }
 }
