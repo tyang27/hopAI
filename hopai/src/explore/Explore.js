@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import "./Explore.css";
 import { Panel, Navbar, Nav, MenuItem, PageHeader } from 'react-bootstrap';
+import Events from './Events.js';
 
 class Explore extends Component {
   render() {
@@ -18,6 +19,7 @@ class Explore extends Component {
           </Nav>
         </Navbar>
 
+
         <div id='Spotlight'>
           <Panel style={{ height: '300px' }}>
             <Panel.Heading>
@@ -32,28 +34,15 @@ class Explore extends Component {
         </div>
 
         <div id='Events'>
-          <Panel style={{ height: '300px' }}>
+          <Panel style={{ height: '500px' }}>
             <Panel.Heading>
               <Panel.Title>Events</Panel.Title>
             </Panel.Heading>
             <Panel.Body>
-              <div>
-                <p>content...</p>
-              </div>
+              <Events />
             </Panel.Body>
           </Panel>
         </div>
-
-        <Panel id='Workshops' style={{ height: '300px' }}>
-          <Panel.Heading>
-            <Panel.Title>Workshops</Panel.Title>
-          </Panel.Heading>
-          <Panel.Body>
-            <div>
-              <p>content...</p>
-            </div>
-          </Panel.Body>
-        </Panel>
 
         <Panel id='Gallery' style={{ height: '300px' }}>
           <Panel.Heading>

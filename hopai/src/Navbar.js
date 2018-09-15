@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import {Navbar, Nav, MenuItem, NavDropdown} from 'react-bootstrap';
 import {Route, Switch, BrowserRouter as Router } from 'react-router-dom';
 import NotFound from './NotFound.js';
-import About from './home/About.js'
+import About from './about/AboutPage.js'
+import Home from './home/About.js'
 import Connect from './connect/Connect.js'
 import Imagine from './imagine/Imagine.js'
 
@@ -42,14 +43,17 @@ class NavBar extends Component {
                   <MenuItem>Projects</MenuItem>
                   <MenuItem>Community</MenuItem>
                 </NavDropdown> */}
+
+                <MenuItem href="/about">About</MenuItem>
               </Nav>
             </Navbar>
 
             <Switch>
-              <Route exact path="/" component={About} />
+              <Route exact path="/" component={Home} />
               <Route path="/explore" component={Explore} />
               <Route path="/discuss" component={Discuss} />
               <Route path="/create" component={Create} />
+              <Route path="/about" component={About} />
               <Route path="*" component={NotFound} />
 
               {/* <Route path="/blog/" component={Blog} />
