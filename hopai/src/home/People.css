@@ -1,0 +1,17 @@
+.BoardRow {
+}
+
+.People {
+  background-color:#DBE0F4;
+  margin:30px;
+  padding:10px;
+}
+
+
+.member {
+  margin:20px;
+  padding:10px;
+}
+.member:hover {
+  transform: scale(1.1);
+}
