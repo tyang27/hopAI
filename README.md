@@ -1,6 +1,7 @@
 # HOPAI WEBSITE
 
 ## File structure
+```
 |- src
 |__
   |- App.js/App.css, initiates website
@@ -27,3 +28,4 @@
   |- imagine/
   |__
     |-- imagine.js/imagine.css, connect tab
+```
