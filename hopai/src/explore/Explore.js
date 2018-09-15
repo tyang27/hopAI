@@ -14,11 +14,9 @@ class Explore extends Component {
           <Nav bsStyle="pills">
             <MenuItem href="#Spotlight">Spotlight</MenuItem>
             <MenuItem href="#Events">Events</MenuItem>
-            <MenuItem href="#Workshops">Workshops</MenuItem>
             <MenuItem href="#Gallery">Gallery</MenuItem>
           </Nav>
         </Navbar>
-
 
         <div id='Spotlight'>
           <Panel style={{ height: '300px' }}>
