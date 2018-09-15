@@ -22,11 +22,11 @@ class NavBar extends Component {
                 </Navbar.Brand>
               </Navbar.Header>
               <Nav>
-                <MenuItem href="/explore">Explore AI</MenuItem>
-                <MenuItem href="/discuss">Discuss AI</MenuItem>
-                <MenuItem href="/create">Create AI</MenuItem>
-                <MenuItem href="/about">About HopAI</MenuItem>
-                <MenuItem href="/contact">Contact HopAI</MenuItem>
+                <MenuItem href="/explore">Explore</MenuItem>
+                <MenuItem href="/discuss">Discuss</MenuItem>
+                <MenuItem href="/create">Create</MenuItem>
+                <MenuItem href="/about">About</MenuItem>
+                <MenuItem href="/contact">Contact</MenuItem>
               </Nav>
             </Navbar>
 
