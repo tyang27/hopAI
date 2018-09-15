@@ -31,7 +31,7 @@ class Discuss extends Component {
     return (
       <div className="Discuss" style={{ height: '4000px', marginLeft: '50px', marginRight: '50px' }}>
 
-        <PageHeader>Discuss <small>AI</small></PageHeader>
+        {/* <PageHeader>Discuss <small>AI</small></PageHeader> */}
 
         <div id='Blog'>
           <Panel>

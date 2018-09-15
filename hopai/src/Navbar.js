@@ -25,6 +25,7 @@ class NavBar extends Component {
                 <MenuItem href="/explore">Explore</MenuItem>
                 <MenuItem href="/discuss">Discuss</MenuItem>
                 <MenuItem href="/create">Create</MenuItem>
+                <MenuItem href="/create" disabled>|</MenuItem>
                 <MenuItem href="/about">About</MenuItem>
                 <MenuItem href="/contact">Contact</MenuItem>
               </Nav>

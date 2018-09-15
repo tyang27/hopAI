@@ -7,7 +7,7 @@ class Create extends Component {
     return (
       <div className="Create" style={{ height: '4000px', marginLeft: '50px', marginRight: '50px' }}>
 
-        <PageHeader>Create <small>AI</small></PageHeader>
+        {/* <PageHeader>Create <small>AI</small></PageHeader> */}
 
         <Navbar className="Navbar" fluid>
           <Nav bsStyle="pills">
