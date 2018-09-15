@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import "./Explore.css";
 import { Panel, Navbar, Nav, MenuItem, PageHeader } from 'react-bootstrap';
 import Events from './Events.js';
-import Gallery from './Gallery.js';
+import Lightbox from './Lightbox.js';
 
 class Explore extends Component {
   render() {
@@ -48,7 +48,7 @@ class Explore extends Component {
             <Panel.Title>Gallery</Panel.Title>
           </Panel.Heading>
           <Panel.Body>
-            <Gallery />
+            <Lightbox />
           </Panel.Body>
         </Panel>
       </div>
