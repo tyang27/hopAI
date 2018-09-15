@@ -3,47 +3,59 @@ import {Navbar, Nav, MenuItem, NavDropdown} from 'react-bootstrap';
 import {Route, Switch, BrowserRouter as Router } from 'react-router-dom';
 import NotFound from './NotFound.js';
 import About from './home/About.js'
-import Discuss from './discuss/Discuss.js'
 import Connect from './connect/Connect.js'
-import Explore from './explore/Explore.js'
 import Imagine from './imagine/Imagine.js'
+
+import Explore from './explore/Explore.js'
+import Discuss from './discuss/Discuss.js'
+import Create from './create/Create.js'
 
 class NavBar extends Component {
   render() {
     return (
         <Router>
           <div>
-            <Navbar className="Navbar" fixedTop fluid>
+            <Navbar className="Navbar" fluid>
               <Navbar.Header>
                 <Navbar.Brand>
                   <a href="./">HopAI</a>
                 </Navbar.Brand>
               </Navbar.Header>
               <Nav>
-                <NavDropdown eventkey={1} title="EXPLORE">
-                  <MenuItem eventKey={1.1}>Spotlight</MenuItem>
-                  <MenuItem eventKey={1.2}>Events</MenuItem>
-                  <MenuItem eventKey={1.3}>Workshops</MenuItem>
-                  <MenuItem eventKey={1.4}>Gallery</MenuItem>
-                </NavDropdown>
-                <NavDropdown eventkey={2} title="DISCUSS">
-                  <MenuItem eventKey={2.1} href="/discuss">Blog</MenuItem>
-                  <MenuItem eventKey={2.2}>Contribute</MenuItem>
-                </NavDropdown>
-                <NavDropdown eventkey={3} title="COLLABORATE">
-                  <MenuItem eventKey={3.1}>Ideas</MenuItem>
-                  <MenuItem eventKey={3.2}>Projects</MenuItem>
-                  <MenuItem eventKey={3.3}>Community</MenuItem>
-                </NavDropdown>
+                <MenuItem href="/explore">Explore AI</MenuItem>
+                {/* <NavDropdown title="EXPLORE">
+                  <MenuItem>Spotlight</MenuItem>
+                  <MenuItem>Events</MenuItem>
+                  <MenuItem>Workshops</MenuItem>
+                  <MenuItem>Gallery</MenuItem>
+                </NavDropdown> */}
+
+                <MenuItem href="/discuss">Discuss AI</MenuItem>
+                {/* <NavDropdown title="DISCUSS">
+                  <MenuItem href="/blog">Blog</MenuItem>
+                  <MenuItem href="/contribute">Contribute</MenuItem>
+                </NavDropdown> */}
+
+                <MenuItem href="/create">Create AI</MenuItem>
+                {/* <NavDropdown title="COLLABORATE">
+                  <MenuItem>>Ideas</MenuItem>
+                  <MenuItem>Projects</MenuItem>
+                  <MenuItem>Community</MenuItem>
+                </NavDropdown> */}
               </Nav>
             </Navbar>
 
             <Switch>
               <Route exact path="/" component={About} />
-              <Route path="/discuss/" component={Discuss} />
-              <Route path="/explore/" component={Explore} />
-              <Route path="/imagine/" component={Imagine} />
-              <Route path="/connect/" component={Connect} />
+              <Route path="/explore" component={Explore} />
+              <Route path="/discuss" component={Discuss} />
+              <Route path="/create" component={Create} />
+              <Route path="*" component={NotFound} />
+
+              {/* <Route path="/blog/" component={Blog} />
+              <Route path="/contribute" component={Contribute} />
+              <Route path="/connect/" component={Connect} /> */}
+
               <Route path="*" component={NotFound} />
             </Switch>
           </div>
