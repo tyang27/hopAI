@@ -6,7 +6,8 @@ class Mission extends Component {
   render() {
     return (
         <Col xs={12} md={8} className="Mission">
-          <h1>Bringing together tomorrow's leaders to promote innovative, safe, and responsible AI.</h1>
+          <h1>OUR MISSION</h1>
+          <h2>Bringing together tomorrow's leaders to promote innovative, safe, and responsible AI.</h2>
         </Col>
         );
   }
