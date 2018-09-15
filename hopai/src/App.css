@@ -16,3 +16,10 @@
 .App-intro {
   font-size: large;
 }
+
+.NavBar {
+  position: relative;
+  min-height: 50px;
+  margin-bottom: none;
+  border: none;
+}

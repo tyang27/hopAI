@@ -1,9 +1,8 @@
 import React, { Component } from "react";
 import { Panel, Col } from "react-bootstrap";
-import "./Mission.css";
 import colors from "../colors";
 
-class Mission extends Component {
+class Vision extends Component {
   render() {
     return (
       <div
@@ -26,34 +25,11 @@ class Mission extends Component {
             textTransform: "uppercase",
           }}
         >
-          Our Mission
+          Our Vision
         </h2>
-
-        <p
-          style={{
-            fontStyle: "italic",
-            fontSize: "1.5rem",
-            color: "rgba(255, 255, 255, 0.8)",
-          }}
-        >
-          Bringing together tomorrow's leaders to promote innovative, safe, and
-          responsible AI.
-        </p>
-        <a
-          href="/about"
-          style={{
-            fontFamily: "Helvetica",
-            fontWeight: "bold",
-            color: "#333",
-            fontSize: "1.5rem",
-            textTransform: "uppercase",
-          }}
-        >
-          Learn More
-        </a>
       </div>
     );
   }
 }
 
-export default Mission;
+export default Vision;
