@@ -16,7 +16,7 @@ class Idea extends Component {
         {this.props.questions}
 
         <h4>Resources</h4>
-        <p><a href="">Link</a></p>
+        <p>{this.props.link}</p>
         </div>
       );
   }

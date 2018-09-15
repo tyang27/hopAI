@@ -7,10 +7,21 @@ class Create extends Component {
 
   render() {
 
-    const questions = [
-      'Words1',
-      'Words2'
-    ];
+    const ideas = [
+      {
+        title: 'Government and Policy',
+        background: 'Some people believe that facial recognition technology will some day replace government issued identification for international border control.',
+        question: [
+      'What are some security issues associated with this implementation?',
+      'How do we address technology that fools AI, also known as adversial examples?',
+      'What criteria or compromises must be satisfied to build this technology responsibly?'
+        ],
+        link: [
+          {httplink:'https://cchs.gwu.edu/sites/g/files/zaxdzs2371/f/Emerging_Mobile_Tech_and_REAL_ID_FINAL.pdf',
+            desc:'REAL ID'}]
+      }
+    ]
+
     return (
       <div className="Create" style={{ height: '4000px', marginLeft: '50px', marginRight: '50px' }}>
 
@@ -30,11 +41,15 @@ class Create extends Component {
               <Panel.Title>Ideas</Panel.Title>
             </Panel.Heading>
             <Panel.Body>
-              <div>
-                <Idea problem="PROBLEM" background="BACKGROUND" questions={questions.map(function(q) {return <p>q</p>;})} />
+              {ideas.map(function(item, i) {
+                return (<Idea
+                    problem={item.title}
+                    background={item.background}
+                    questions={item.question.map(q => <p>{q}</p>)}
+                    link={item.link.map(l => <a href={l.httplink}>{l.desc}</a>)}
+                  />); 
+              })}
                 <hr xs="5" />
-                <Idea />
-              </div>
             </Panel.Body>
           </Panel>
         </div>
